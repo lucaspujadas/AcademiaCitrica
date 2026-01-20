@@ -342,6 +342,28 @@ strong {
   box-shadow: 0 20px 50px -10px var(--color-accent-4-glow);
 }
 
+.testimonial-img-wrapper {
+  display: block;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+  border: 2px solid var(--color-accent-2);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.testimonial-img-wrapper:hover .testimonial-img {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--color-accent-2-glow);
+}
+
 /* 3D Tilt Effect Base Class */
 .tilt-card {
   transform-style: preserve-3d;
